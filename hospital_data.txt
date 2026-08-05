@@ -1,0 +1,2 @@
+10002,John,19,Male,789.0,false,0.0,0.0,Stomach ache,,
+10019,Erwin,19,Male,5000.0,true,10.0,1500.0,Flu,Amoxicilin ~500mg~Drink 3 times a day,

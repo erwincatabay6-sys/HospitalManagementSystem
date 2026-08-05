@@ -1,0 +1,295 @@
+Hospital Management System
+
+Version 1.0.0 - Initial Release
+
+• Patient Management
+
+- Added patient registration.
+- Added patient ID.
+- Added patient name.
+- Added patient age.
+- Added patient gender.
+- Added senior citizen status.
+
+• Basic Billing
+
+- Added billing amount.
+- Added basic billing calculations.
+- Added initial billing statement functionality.
+
+• Core Java Practice
+
+- Created the initial Java classes.
+- Introduced object-oriented programming concepts.
+- Used classes, objects, fields, constructors, and methods.
+- Created the initial console-based menu system.
+
+Version 1.1.0 - Core Improvements
+
+• Patient Management
+- Improved patient management functionality.
+- Added patient searching.
+- Added patient updating.
+- Improved patient record handling.
+
+• Billing Improvements 
+
+- Improved billing calculations.
+- Added discount-related functionality.
+- Added insurance coverage handling.
+- Improved billing statement output.
+
+• Code Improvements
+
+- Improved the menu structure.
+- Improved program organization.
+- Practiced object-oriented programming concepts more extensively.
+
+Version 1.2.0 - Data Analysis 
+
+• Patient Data Analysis
+
+- Added search by patient name.
+- Added search by patient age.
+- Added sorting patients by billing amount.
+- Added sorting from highest billing to lowest.
+- Added sorting from lowest billing to highest.
+- Added sorting patients by name.
+
+• Billing Analysis
+
+- Added average billing calculation.
+- Added highest billing calculation.
+- Added lowest billing calculation.
+
+• Patient Records
+
+- Improved viewing and managing patient records.
+- Expanded the patient management menu.
+
+Version 1.3.0 - Data Persistence System
+
+• File Persistence
+
+- Added saving patient data to a file.
+- Added loading patient data from a file.
+- Added automatic file creation when no data file exists.
+- Added handling for empty files.
+- Added handling for missing saved data.
+
+• Data Conversion
+
+- Added toFileString() for converting patient data into a storable format.
+- Added file parsing for reconstructing patient objects.
+
+• Program Improvements
+
+- Patient data could now survive after the program closes.
+- Improved data management between program sessions
+
+Version 1.4.0 - Input Handling and Convenience features
+
+• InputHelper
+
+- Created the InputHelper utility class.
+- Added reusable input methods for:
+- Integer input
+- Age input
+- Gender input
+- Non-negative decimal values
+- Yes/No input
+- Percentage input
+
+• Input Validation
+
+- Improved invalid input handling.
+- Reduced repeated input-validation code.
+- Improved user experience throughout the menus.
+
+• Code Organization
+
+- Centralized common input logic.
+- Improved code readability.
+- Reduced duplicated input-handling code.
+
+• Improvements
+
+- Consistent "Patient Not Found" messages for search features
+- Cleaner search logic using reusable search pattern
+- Improved method naming for better readability
+- Refined billing sorting implementation
+
+• Code Improvements
+
+- Reused search algorithm across multiple features
+- Used Collections.sort() with lambda expressions
+- Improved comparator usage for ascending/descending sorting
+- Better separation of search and display logic
+
+• Bug Fixes
+
+- Fixed Scanner newline issue causing empty search input
+- Fixed search methods displaying all patients on empty input
+- Improved validation for search operations
+
+Version 1.4.1 - Exception Handling
+
+• Duplicate Patient Protection
+
+- Created DuplicatePatientIdException.
+- Prevented multiple patients from using the same patient ID.
+- Added exception handling when adding patients.
+- Improved error messages for duplicate patient IDs.
+
+• Code Quality
+
+- Introduced custom exception handling.
+- Improved separation between normal program flow and error handling.
+
+Version 1.5.0 - Code Cleanup and Improvements 
+
+• Code Improvements
+
+- Improved overall code organization.
+- Cleaned up the menu structure.
+- Improved method organization.
+- Reduced unnecessary code duplication.
+- Improved the readability of the system.
+
+• Patient Management
+
+- Improved patient updating.
+- Improved patient record management.
+- Improved billing statement presentation.
+
+• Logging
+
+- Added Java logging functionality.
+- Added logging for important hospital system events.
+- Added logging for successful patient additions.
+- Added logging for duplicate patient ID attempts.
+
+• File Management
+
+- Improved file saving.
+- Improved file loading.
+- Fixed patient update persistence issues.
+- Improved handling of saved patient records.
+
+Version 1.5.1 - Billing and Patient Information Improvements
+
+• Patient Information
+
+- Improved patient information management.
+- Added gender information to patient records.
+- Improved patient record display.
+
+• Billing Improvements
+
+- Improved billing statement formatting.
+- Added original billing amount display.
+- Added insurance coverage display.
+- Added discount value display.
+- Improved senior citizen discount handling.
+- Improved final amount due calculations.
+• Billing Statement
+
+The billing statement was improved to display information such as:
+
+Original Amount
+Discount Value
+Insurance Coverage
+Senior Discount
+Amount Due
+
+• System Improvements
+
+- Improved patient update functionality.
+- Improved the overall organization of the hospital management system.
+- Prepared the system for the expansion of medical records.
+
+Version 1.5.2 - Core Medical Records
+
+• Patient Management
+
+- Added multiple diagnoses per patient.
+- Added diagnosis management:
+- Add diagnosis
+- Remove diagnosis
+- Replace all diagnoses
+- Added multiple prescriptions per patient.
+- Added prescription management:
+- Add prescription
+- Remove prescription
+- Replace all prescriptions
+- Improved the Patient Records menu.
+- Improved the main menu architecture.
+
+• Persistence
+
+- Added diagnosis persistence.
+- Added prescription persistence.
+- Updated toFileString() to serialize diagnoses and prescriptions.
+- Updated loadToFile() to restore diagnoses and prescriptions.
+- Added support for multiple diagnoses and prescriptions when saving and loading.
+
+Version 1.6.0 - Billing and Payment System
+• Billing
+- Moved billing information out of Add Patient.
+- Added separate Create Billing Statement workflow.
+- Billing information is now attached to an existing patient.
+
+Added:
+- Billing Amount
+- Senior Citizen status
+- Discount
+- Insurance Coverage
+- Restored the functionality of the billing statement through the new workflow.
+- Payment System
+- Added Payment class.
+- Added support for multiple payments per patient.
+
+Added:
+- Payment amount
+- Payment method
+- Added payment tracking through ArrayList<Payment>.
+- Payment Calculations
+- Added total paid calculation.
+- Added remaining balance calculation.
+
+Added payment status:
+- UNPAID
+- PARTIALLY PAID
+- PAID
+- Added overpayment prevention.
+- Added support for full payments.
+- Added support for partial/down payments.
+- Added support for multiple payments until the balance reaches zero.
+
+Billing and Payment Menu
+1. Create Billing Statement
+2. Make Payment
+3. View Billing Statement
+4. View Payment History
+5. View Payment Receipt
+0. Back
+
+• Payment History
+
+- Added payment history viewing.
+- Added Payment.display() for displaying individual payment records.
+- Payment Receipt
+- Added receipt display functionality.
+
+Supports displaying:
+- Patient information
+- Amount paid
+- Payment method
+- Total paid
+- Remaining balance
+- Payment status
+
+Version 1.6.01 
+
+-Added Persistance for Payment System.
+-Bug fixes
